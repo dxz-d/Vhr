@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/vhr?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 12345678
+
+server:
+  port: 8082
+
+mybatis:
+  typeAliasesPackage: org.spring.springboot.domain
+  mapperLocations: classpath:mapper/*.xml
+
+# ??sql
+logging:
+  level:
+    com.example.springvhr.mapper : debug
